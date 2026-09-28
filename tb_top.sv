@@ -110,7 +110,7 @@ module tb_top;
         $display("[TB] Reset done, starting random stimulus");
 
         // Фаза 1: случайный стимул
-        for (int i = 0; i < NUM_OPS; i++) begin
+        for (int i = 0; i < NUM_OPS; i++) begin // i — это счётчик, который говорит: «Сделай это действие NUM_OPS (500) раз»
             @(negedge clk);
             wr_en   = $urandom_range(0, 1);
             rd_en   = $urandom_range(0, 1);
