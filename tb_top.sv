@@ -102,7 +102,7 @@ module tb_top #(
         rd_en   = 0;
         data_in = '0;
 
-        // Сброс
+        // Сброс снят
         repeat (5) @(posedge clk);
         rst_n = 1;
         @(posedge clk);
