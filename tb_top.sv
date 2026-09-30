@@ -2,11 +2,11 @@
 
 `timescale 1ns/1ps
 
-module tb_top;
-
-    parameter int DATA_WIDTH = 8;
-    parameter int DEPTH      = 16;
-    parameter int NUM_OPS    = 500;
+module tb_top #(
+    parameter int DATA_WIDTH = 8,
+    parameter int DEPTH      = 16,
+    parameter int NUM_OPS    = 500
+);
 
     // ---- Тактовый сигнал ----
     logic clk = 0;
